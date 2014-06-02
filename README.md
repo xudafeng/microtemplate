@@ -1,7 +1,7 @@
 microtemplate
 ===
 
-by xdf
+micor template engine
 
 ## Installment
 
@@ -9,10 +9,16 @@ by xdf
 $ sudo npm install microtemplate -g
 ```
 
-## Quick Start
+## Quick Start & Options
 
-```bash
-$ microtemplate xdf
+```
+var render = require('microtemplate').render;
+var output = render('<#key#>',{
+    key:'value'
+  },{
+    tagOpen:'<#',
+    tagClose:'#>'
+});
 ```
 
 ## License

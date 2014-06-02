@@ -1,6 +1,6 @@
 {
   "name": "microtemplate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "microtemplate",
   "bin": {
     "seat": "./bin/microtemplate"
