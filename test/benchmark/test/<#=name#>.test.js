@@ -1,8 +1,7 @@
-#!/usr/bin/env node
 /* ================================================================
- * microtemplate by xdf(xudafeng[at]126.com)
+ * <#=name#> by xdf(xudafeng[at]126.com)
  *
- * first created at : Mon Jun 02 2014 19:23:07 GMT+0800 (CST)
+ * first created at : <#time#>
  *
  * ================================================================
  * Copyright 2013 xdf
@@ -12,4 +11,9 @@
  *
  * ================================================================ */
 
-"use strict";
+'use strict';
+
+var <#=name#> = require('../');
+
+describe('test', function(){
+});
