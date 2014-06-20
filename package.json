@@ -1,19 +1,16 @@
 {
   "name": "microtemplate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "microtemplate",
   "bin": {
-    "seat": "./bin/microtemplate"
+    "microtemplate": "./bin/microtemplate"
   },
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/xudafeng/microtemplate.git"
   },
-  "dependencies": {
-  },
-  "keywords": [
-  ],
+  "keywords": ["template"],
   "devDependencies": {
     "mocha": "*"
   },
