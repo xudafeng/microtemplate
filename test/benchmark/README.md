@@ -1,4 +1,4 @@
-microtemplate
+<#=name#>
 ===
 
 [![NPM version][npm-image]][npm-url]
@@ -7,35 +7,29 @@ microtemplate
 [![node version][node-image]][node-url]
 [![npm download][download-image]][download-url]
 
-[npm-image]: https://img.shields.io/npm/v/microtemplate.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/microtemplate
-[travis-image]: https://img.shields.io/travis/xudafeng/microtemplate.svg?style=flat-square
-[travis-url]: https://travis-ci.org/xudafeng/microtemplate
-[coveralls-image]: https://img.shields.io/coveralls/xudafeng/microtemplate.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/r/xudafeng/microtemplate?branch=master
+[npm-image]: https://img.shields.io/npm/v/<#=name#>.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/<#=name#>
+[travis-image]: https://img.shields.io/travis/xudafeng/<#=name#>.svg?style=flat-square
+[travis-url]: https://travis-ci.org/xudafeng/<#=name#>
+[coveralls-image]: https://img.shields.io/coveralls/xudafeng/<#=name#>.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/xudafeng/<#=name#>?branch=master
 [node-image]: https://img.shields.io/badge/node.js-%3E=_0.10-green.svg?style=flat-square
 [node-url]: http://nodejs.org/download/
-[download-image]: https://img.shields.io/npm/dm/microtemplate.svg?style=flat-square
-[download-url]: https://npmjs.org/package/microtemplate
+[download-image]: https://img.shields.io/npm/dm/<#=name#>.svg?style=flat-square
+[download-url]: https://npmjs.org/package/<#=name#>
 
-> micro template engine
+> <#=name#> by xdf
 
 ## Installment
 
 ```bash
-$ npm i microtemplate -g
+$ npm i <#=name#> -g
 ```
 
-## Quick Start & Options
+## Quick Start
 
-```
-var Render = require('microtemplate').render;
-var output = Render('<#key#>', {
-    key: 'value'
-  }, {
-    tagOpen: '<#',
-    tagClose: '#>'
-});
+```bash
+$ <#=name#> xdf
 ```
 
 ## License
