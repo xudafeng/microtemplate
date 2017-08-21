@@ -2,9 +2,10 @@
 
 var fs = require('fs');
 var path = require('path');
+
 var parse = require('../index').parse;
-var compile = require('../index').compile;
 var render = require('../index').render;
+var compile = require('../index').compile;
 
 describe('microtemplate.js', function () {
   var template = '<#if (a) {#><#=a#>bc<#}#><#=d#>';
@@ -36,7 +37,7 @@ describe('microtemplate.js', function () {
       var res = render(template, {
         name: 'microtemplate'
       });
-      res.should.be.a.String;
+      res.should.be.a.String();
     });
   });
 });

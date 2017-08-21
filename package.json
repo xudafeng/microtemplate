@@ -1,7 +1,7 @@
 {
   "name": "microtemplate",
-  "version": "1.0.0",
-  "description": "microtemplate",
+  "version": "1.0.1",
+  "description": "micro template",
   "bin": {
     "microtemplate": "./bin/microtemplate"
   },
