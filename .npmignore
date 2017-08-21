@@ -6,4 +6,5 @@ Makefile
 .jshintrc
 .jshintignore
 coverage/
-
+*.sw*
+*.un~

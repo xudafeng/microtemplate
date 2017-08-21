@@ -1,6 +1,6 @@
 {
   "name": "microtemplate",
-  "version": "0.1.5",
+  "version": "1.0.0",
   "description": "microtemplate",
   "bin": {
     "microtemplate": "./bin/microtemplate"
@@ -10,11 +10,14 @@
     "type": "git",
     "url": "git://github.com/xudafeng/microtemplate.git"
   },
-  "keywords": ["template"],
+  "keywords": [
+    "template"
+  ],
   "devDependencies": {
+    "istanbul": "^0.4.5",
+    "jshint": "^2.9.5",
     "mocha": "*",
-    "istanbul": "*",
-    "should": "~4.0.4",
+    "should": "*",
     "should-http": "0.0.2"
   },
   "scripts": {
@@ -22,8 +25,5 @@
     "test-travis": "node node_modules/.bin/istanbul cover node_modules/.bin/_mocha --report lcovonly -- -t 20000 -r should-http test/*.test.js"
   },
   "homepage": "https://github.com/xudafeng/microtemplate",
-  "author": "xudafeng",
-  "email": "xudafeng@126.com",
-  "blog": "http://xdf.me",
   "license": "MIT"
 }
