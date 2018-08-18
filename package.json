@@ -1,6 +1,6 @@
 {
   "name": "microtemplate",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "micro template",
   "bin": {
     "microtemplate": "./bin/microtemplate"
@@ -14,16 +14,20 @@
     "template"
   ],
   "devDependencies": {
-    "istanbul": "^0.4.5",
-    "jshint": "^2.9.5",
+    "eslint": "^4.18.2",
+    "eslint-plugin-mocha": "^4.12.1",
+    "git-contributor": "^1.0.8",
     "mocha": "*",
-    "should": "*",
-    "should-http": "0.0.2"
+    "nyc": "^11.6.0",
+    "pre-commit": "1"
   },
   "scripts": {
-    "test": "mocha",
-    "test-travis": "node node_modules/.bin/istanbul cover node_modules/.bin/_mocha --report lcovonly -- -t 20000 -r should-http test/*.test.js"
+    "test": "nyc --reporter=lcov --reporter=text mocha",
+    "lint": "eslint --fix lib",
+    "ci": "npm run lint && npm run test",
+    "clean": "rm -rf ./docs",
+    "build:doc": "npm run clean && jsdoc -c ./jsdoc.json",
+    "contributor": "git-contributor"
   },
-  "homepage": "https://github.com/xudafeng/microtemplate",
   "license": "MIT"
 }

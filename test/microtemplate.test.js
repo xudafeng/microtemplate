@@ -3,9 +3,11 @@
 var fs = require('fs');
 var path = require('path');
 
-var parse = require('../index').parse;
-var render = require('../index').render;
-var compile = require('../index').compile;
+var {
+  parse,
+  render,
+  compile,
+} = require('..');
 
 describe('microtemplate.js', function () {
   var template = '<#if (a) {#><#=a#>bc<#}#><#=d#>';
