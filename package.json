@@ -19,7 +19,8 @@
     "git-contributor": "^1.0.8",
     "mocha": "*",
     "nyc": "^11.6.0",
-    "pre-commit": "1"
+    "pre-commit": "1",
+    "should": "^13.2.3"
   },
   "scripts": {
     "test": "nyc --reporter=lcov --reporter=text mocha",
