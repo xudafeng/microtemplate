@@ -7,7 +7,67 @@
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="//unpkg.com/microtemplate@latest/lib/microtemplate.js"></script>
+<style>
+textarea {
+  width: 500px;
+  height: 200px;
+}
+#result {
+  border: 1px solid #eee;
+}
+</style>
   </head>
   <body>
+    <div>
+      <div>
+        <textarea id="template">
+<ul>
+  <# for (var i = 0; i < list.length; i++) { #>
+  <li>name: <#=list[i].name#>, age: <#=list[i].age#></li>
+  <# } #>
+</ul>
+        </textarea>
+      </div>
+      <div>
+        <textarea id="data">
+{
+  "list": [
+    {
+      "name": "tom",
+      "age": 18
+    }, {
+      "name": "jack",
+      "age": 20
+    }, {
+      "name": "jam",
+      "age": 25
+    }
+  ]
+}
+        </textarea>
+      </div>
+      <div id="result">
+      </div>
+    </div>
+    <script>
+var renderHandle = function() {
+  try {
+    var tpl = document.querySelector('#template').value.trim();
+    var dataStr = document.querySelector('#data').value.trim();
+    var data = JSON.parse(dataStr);
+    var output = microtemplate.render(tpl, data, {
+      tagOpen: '<#',
+      tagClose: '#>',
+    });
+    document.querySelector('#result').innerHTML = output;
+  } catch (e) {
+    document.querySelector('#result').innerHTML = e.stack;
+  }
+};
+document.querySelectorAll('textarea').forEach(function(node) {
+  node.addEventListener('change', renderHandle, false);
+});
+renderHandle();
+    </script>
   </body>
 </html>
