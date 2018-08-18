@@ -6,6 +6,5 @@ Thumbs.db
 coverage/
 .nyc_output
 .project
-*.html
 *.sw*
 *.un~
