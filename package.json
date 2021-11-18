@@ -2,9 +2,9 @@
   "name": "microtemplate",
   "version": "2.0.1",
   "description": "micro template",
-  "bin": {
-    "microtemplate": "./bin/microtemplate"
-  },
+  "files": [
+    "lib/**/*.js"
+  ],
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -16,10 +16,9 @@
   "devDependencies": {
     "eslint": "^4.18.2",
     "eslint-plugin-mocha": "^4.12.1",
-    "git-contributor": "^1.0.8",
+    "git-contributor": "1",
     "mocha": "*",
     "nyc": "^11.6.0",
-    "pre-commit": "1",
     "should": "^13.2.3"
   },
   "scripts": {

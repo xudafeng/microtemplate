@@ -1,8 +1,0 @@
-.travis.yml
-test/
-.jshintrc
-.jshintignore
-coverage/
-.nyc_output
-*.sw*
-*.un~
