@@ -9,7 +9,7 @@ var {
   compile,
 } = require('..');
 
-describe('microtemplate.js', function () {
+describe('microtemplate2.js', function () {
   var template = '<#if (a) {#><#=a#>bc<#}#><#=d#>';
   describe('parse test', function () {
     it('should be ok', function () {
@@ -37,7 +37,7 @@ describe('microtemplate.js', function () {
       var template = path.join(__dirname, 'benchmark/package.json');
       template = fs.readFileSync(template, 'utf-8');
       var res = render(template, {
-        name: 'microtemplate'
+        name: 'microtemplate2'
       });
       res.should.be.a.String();
     });
