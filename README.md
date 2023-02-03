@@ -1,4 +1,4 @@
-# microtemplate
+# microtemplate2
 
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
@@ -6,29 +6,29 @@
 [![node version][node-image]][node-url]
 [![npm download][download-image]][download-url]
 
-[npm-image]: https://img.shields.io/npm/v/microtemplate.svg
-[npm-url]: https://npmjs.org/package/microtemplate
-[travis-image]: https://img.shields.io/travis/xudafeng/microtemplate.svg
-[travis-url]: https://travis-ci.org/xudafeng/microtemplate
-[coveralls-image]: https://img.shields.io/coveralls/xudafeng/microtemplate.svg
-[coveralls-url]: https://coveralls.io/r/xudafeng/microtemplate?branch=master
+[npm-image]: https://img.shields.io/npm/v/microtemplate2.svg
+[npm-url]: https://npmjs.org/package/microtemplate2
+[travis-image]: https://img.shields.io/travis/xudafeng/microtemplate2.svg
+[travis-url]: https://travis-ci.org/xudafeng/microtemplate2
+[coveralls-image]: https://img.shields.io/coveralls/xudafeng/microtemplate2.svg
+[coveralls-url]: https://coveralls.io/r/xudafeng/microtemplate2?branch=master
 [node-image]: https://img.shields.io/badge/node.js-%3E=_8-green.svg
 [node-url]: http://nodejs.org/download/
-[download-image]: https://img.shields.io/npm/dm/microtemplate.svg
-[download-url]: https://npmjs.org/package/microtemplate
+[download-image]: https://img.shields.io/npm/dm/microtemplate2.svg
+[download-url]: https://npmjs.org/package/microtemplate2
 
 > micro template engine
 
 ## Installment
 
 ```bash
-$ npm i microtemplate -g
+$ npm i microtemplate2 -g
 ```
 
 ## Options
 
 ```javascript
-const Render = require('microtemplate').render;
+const Render = require('microtemplate2').render;
 const output = Render('<#key#>', {
   key: 'value'
 }, {
