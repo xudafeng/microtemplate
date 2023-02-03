@@ -1,18 +1,18 @@
 # microtemplate2
 
 [![NPM version][npm-image]][npm-url]
-[![build status][travis-image]][travis-url]
-[![Test coverage][coveralls-image]][coveralls-url]
+[![CI][ci-image]][ci-url]
+[![Test coverage][codecov-image]][codecov-url]
 [![node version][node-image]][node-url]
 [![npm download][download-image]][download-url]
 
 [npm-image]: https://img.shields.io/npm/v/microtemplate2.svg
 [npm-url]: https://npmjs.org/package/microtemplate2
-[travis-image]: https://img.shields.io/travis/xudafeng/microtemplate2.svg
-[travis-url]: https://travis-ci.org/xudafeng/microtemplate2
-[coveralls-image]: https://img.shields.io/coveralls/xudafeng/microtemplate2.svg
-[coveralls-url]: https://coveralls.io/r/xudafeng/microtemplate2?branch=master
-[node-image]: https://img.shields.io/badge/node.js-%3E=_8-green.svg
+[ci-image]: https://github.com/xudafeng/microtemplate2/actions/workflows/ci.yml/badge.svg
+[ci-url]: https://github.com/xudafeng/microtemplate2/actions/workflows/ci.yml
+[codecov-image]: https://img.shields.io/codecov/c/github/xudafeng/microtemplate2.svg?logo=codecov
+[codecov-url]: https://codecov.io/gh/xudafeng/microtemplate2
+[node-image]: https://img.shields.io/badge/node.js-%3E=_12-green.svg
 [node-url]: http://nodejs.org/download/
 [download-image]: https://img.shields.io/npm/dm/microtemplate2.svg
 [download-url]: https://npmjs.org/package/microtemplate2

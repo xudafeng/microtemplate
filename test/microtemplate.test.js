@@ -1,5 +1,6 @@
 'use strict';
 
+const assert = require('assert');
 var fs = require('fs');
 var path = require('path');
 
@@ -9,12 +10,12 @@ var {
   compile,
 } = require('..');
 
-describe('microtemplate2.js', function () {
+describe('microtemplate.js', function () {
   var template = '<#if (a) {#><#=a#>bc<#}#><#=d#>';
   describe('parse test', function () {
     it('should be ok', function () {
       var res = parse(template);
-      res.should.have.length(5);
+      assert.equal(res.length, 5);
     });
   });
   describe('compile test', function () {
@@ -29,7 +30,7 @@ describe('microtemplate2.js', function () {
         a: 'aa',
         d: 'dd'
       });
-      res.should.equal('aabcdd');
+      assert.equal(res, 'aabcdd');
     });
   });
   describe('file io test', function () {
@@ -39,7 +40,7 @@ describe('microtemplate2.js', function () {
       var res = render(template, {
         name: 'microtemplate2'
       });
-      res.should.be.a.String();
+      assert.equal(typeof res, 'string')
     });
   });
 });
