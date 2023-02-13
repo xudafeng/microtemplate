@@ -6,7 +6,7 @@
       grace
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="//unpkg.com/microtemplate2@latest/lib/microtemplate2.js"></script>
+    <script src="//unpkg.com/microtemplate@latest/lib/microtemplate.js"></script>
 <style>
 textarea {
   width: 500px;
@@ -55,7 +55,7 @@ var renderHandle = function() {
     var tpl = document.querySelector('#template').value.trim();
     var dataStr = document.querySelector('#data').value.trim();
     var data = JSON.parse(dataStr);
-    var output = microtemplate2.render(tpl, data, {
+    var output = microtemplate.render(tpl, data, {
       tagOpen: '<#',
       tagClose: '#>',
     });

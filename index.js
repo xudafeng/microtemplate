@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require('./lib/microtemplate2');
+module.exports = require('./lib/microtemplate');
