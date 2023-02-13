@@ -38,7 +38,7 @@ describe('microtemplate.js', function () {
       var template = path.join(__dirname, 'benchmark/package.json');
       template = fs.readFileSync(template, 'utf-8');
       var res = render(template, {
-        name: 'microtemplate2'
+        name: 'microtemplate'
       });
       assert.equal(typeof res, 'string')
     });

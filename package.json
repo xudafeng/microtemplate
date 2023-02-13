@@ -1,6 +1,6 @@
 {
-  "name": "microtemplate2",
-  "version": "2.0.3",
+  "name": "microtemplate",
+  "version": "2.0.4",
   "description": "micro template",
   "files": [
     "lib/**/*.js"
@@ -8,7 +8,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/xudafeng/microtemplate2.git"
+    "url": "git://github.com/xudafeng/microtemplate.git"
   },
   "keywords": [
     "template"
